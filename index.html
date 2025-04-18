@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Contato</title>
+</head>
+<body>
+  <h2>Formulário de Contato</h2>
+  <form action="/enviar" method="post">
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="exemplo@email.com" required><br><br>
+
+    <label for="senha">Senha:</label><br>
+    <input type="password" id="senha" name="senha" placeholder="************" required><br><br>
+
+    <label for="pais">País:</label><br>
+    <select id="pais" name="pais" required>
+      <option value="">Selecione um país</option>
+      <option value="br">Brasil</option>
+      <option value="pt">Portugal</option>
+      <option value="us">Estados Unidos</option>
+      <option value="es">Espanha</option>
+      <option value="fr">França</option>
+      <option value="de">Alemanha</option>
+      <option value="jp">Japão</option>
+    </select><br><br>
+
+    <label for="comentario">Comentário:</label><br>
+    <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar"> 
+    
+  </form>
+</body>
+</html>
